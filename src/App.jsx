@@ -9,13 +9,12 @@ const LINKS = {
 
 function LogoMark() {
   return (
-    <div className="relative flex h-28 w-28 items-center justify-center rounded-full border-4 border-white/90 bg-black shadow-2xl shadow-yellow-500/10 md:h-36 md:w-36">
-      <div className="absolute -top-1 h-12 w-24 rounded-t-full border-t-4 border-red-600" />
-      <div className="absolute bottom-1 h-10 w-20 rounded-b-full border-b-4 border-red-600" />
-      <div className="absolute left-1/2 top-1/2 h-2 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white" />
-      <div className="absolute left-[-18px] top-1/2 h-10 w-5 -translate-y-1/2 rounded bg-white" />
-      <div className="absolute right-[-18px] top-1/2 h-10 w-5 -translate-y-1/2 rounded bg-white" />
-      <div className="relative z-10 text-7xl font-black italic tracking-tight text-yellow-400 md:text-8xl">K</div>
+    <div className="relative flex h-36 w-36 items-center justify-center rounded-[2rem] border border-white/10 bg-black/40 p-3 shadow-2xl shadow-yellow-500/10 md:h-44 md:w-44">
+      <img
+        src="/kelani-logo.png"
+        alt="Kelani logo"
+        className="h-full w-full object-contain"
+      />
     </div>
   );
 }
