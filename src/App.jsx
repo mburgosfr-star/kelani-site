@@ -3,8 +3,11 @@ import React from "react";
 const LINKS = {
   neoStore: "https://apt.izzysoft.de/fdroid/index/apk/com.kel.powerlifting",
   github: "https://github.com/mburgosfr-star/kelani-sbd-tracker",
+  issues: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new",
   youtube: "https://www.youtube.com/@KelaniFocus",
   email: "mailto:mburgosfr@gmail.com",
+  feedback: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20feedback",
+  interest: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20testing%20or%20coaching%20interest",
 };
 
 function LogoMark() {
@@ -145,6 +148,41 @@ export default function KelaniHomepage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+        <div className="rounded-[2rem] border border-yellow-400/20 bg-yellow-400/[0.06] p-8 md:p-10">
+          <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
+            <div>
+              <div className="mb-4 inline-flex rounded-full border border-yellow-400/30 bg-black/30 px-4 py-2 text-sm font-bold text-yellow-300">
+                Support development
+              </div>
+              <h2 className="text-3xl font-black text-white md:text-4xl">Support Kelani SBD Tracker</h2>
+              <p className="mt-4 leading-8 text-zinc-300">
+                Kelani SBD Tracker is free, offline and ad-free. If you want to support development, the most useful things right now are feedback, bug reports and sharing the app with other lifters.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <a href={LINKS.feedback} className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+                <div className="font-bold text-white">Send feedback</div>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">Tell me what works, what feels unclear, or what would make the app more useful in real training.</p>
+              </a>
+              <a href={LINKS.issues} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+                <div className="font-bold text-white">Report a bug</div>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">Open a GitHub issue with what happened, what you expected, and which app version you were using.</p>
+              </a>
+              <a href={LINKS.neoStore} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+                <div className="font-bold text-white">Support development</div>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">Share the app with another lifter or follow future Kelani updates. A direct support option may be added later.</p>
+              </a>
+              <a href={LINKS.interest} className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+                <div className="font-bold text-white">Testing or coaching interest</div>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">Let me know if you want to test future versions or hear about practical training review options later.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="mx-auto flex max-w-7xl flex-col gap-4 border-t border-white/10 px-6 py-10 text-sm text-zinc-400 md:flex-row md:items-center md:justify-between md:px-10">
         <div>© {new Date().getFullYear()} Kelani. Built independently.</div>
         <div className="flex flex-wrap gap-4">
@@ -157,4 +195,3 @@ export default function KelaniHomepage() {
     </main>
   );
 }
-
