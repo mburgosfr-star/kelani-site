@@ -217,11 +217,14 @@ export default function KelaniHomepage() {
       return savedLang;
     }
 
-    const browserLanguage = (navigator.language || "").toLowerCase();
+    const browserLanguages = [
+      ...(navigator.languages || []),
+      navigator.language || "",
+    ].map(language => language.toLowerCase());
 
-    if (browserLanguage.startsWith("ca")) return "ca";
-    if (browserLanguage.startsWith("nl")) return "nl";
-    if (browserLanguage.startsWith("en")) return "en";
+    if (browserLanguages.some(language => language.startsWith("ca"))) return "ca";
+    if (browserLanguages.some(language => language.startsWith("nl"))) return "nl";
+    if (browserLanguages.some(language => language.startsWith("en"))) return "en";
 
     return "en";
   });
