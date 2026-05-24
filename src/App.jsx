@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const LINKS = {
   neoStore: "https://apt.izzysoft.de/fdroid/index/apk/com.kel.powerlifting",
@@ -209,7 +209,26 @@ function LanguageSwitcher({ lang, setLang }) {
 }
 
 export default function KelaniHomepage() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(() => {
+    const savedLang = localStorage.getItem("kelani-site-language");
+    const supportedLanguages = ["ca", "en", "nl"];
+
+    if (supportedLanguages.includes(savedLang)) {
+      return savedLang;
+    }
+
+    const browserLanguage = (navigator.language || "").toLowerCase();
+
+    if (browserLanguage.startsWith("ca")) return "ca";
+    if (browserLanguage.startsWith("nl")) return "nl";
+    if (browserLanguage.startsWith("en")) return "en";
+
+    return "en";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("kelani-site-language", lang);
+  }, [lang]);
   const t = T[lang];
 
   return (
