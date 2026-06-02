@@ -505,6 +505,9 @@ export default function KelaniHomepage() {
           <a className="hover:text-white" href={LINKS.email}>
             {t.contact}
           </a>
+          <a className="hover:text-white" href={LINKS.privacy}>
+            {t.privacy}
+          </a>
         </div>
       </footer>
     </main>
