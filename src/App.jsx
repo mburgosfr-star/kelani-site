@@ -365,6 +365,11 @@ export default function KelaniHomepage() {
   useEffect(() => {
     localStorage.setItem("kelani-site-language", lang);
   }, [lang]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [route]);
+
   const t = T[lang];
 
   if (route === "#privacy" || route === "/privacy") {
