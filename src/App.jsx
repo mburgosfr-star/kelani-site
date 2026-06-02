@@ -326,6 +326,22 @@ function LanguageSwitcher({ lang, setLang }) {
 }
 
 export default function KelaniHomepage() {
+  const [route, setRoute] = useState(() => window.location.hash || window.location.pathname);
+
+  useEffect(() => {
+    function handleRouteChange() {
+      setRoute(window.location.hash || window.location.pathname);
+    }
+
+    window.addEventListener("hashchange", handleRouteChange);
+    window.addEventListener("popstate", handleRouteChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleRouteChange);
+      window.removeEventListener("popstate", handleRouteChange);
+    };
+  }, []);
+
   const [lang, setLang] = useState(() => {
     const savedLang = localStorage.getItem("kelani-site-language");
     const supportedLanguages = ["ca", "en", "nl"];
@@ -351,7 +367,7 @@ export default function KelaniHomepage() {
   }, [lang]);
   const t = T[lang];
 
-  if (window.location.hash === "#privacy") {
+  if (route === "#privacy" || route === "/privacy") {
     return <PrivacyPage t={t} lang={lang} setLang={setLang} />;
   }
 
