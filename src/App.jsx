@@ -201,32 +201,32 @@ const T = {
       "Laat weten als je informatie wilt ontvangen over praktische trainingsreview-opties.",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
-    privacy: "Privacy Policy",
-    backHome: "Back to Kelani",
-    privacyUpdated: "Last updated: 2026-06-02",
+    privacy: "Privacybeleid",
+    backHome: "Terug naar Kelani",
+    privacyUpdated: "Laatst bijgewerkt: 2026-06-02",
     privacyIntro:
-      "Kelani SBD Tracker is an offline-first powerlifting tracker for Squat, Bench Press and Deadlift training. The app is built to work without accounts, ads, tracking or analytics.",
-    privacyDataTitle: "Data collection",
+      "Kelani SBD Tracker is een offline-first powerlifting-app voor Squat-, Bench Press- en Deadlift-training. De app is gebouwd om te werken zonder accounts, advertenties, tracking of analytics.",
+    privacyDataTitle: "Gegevensverzameling",
     privacyDataText:
-      "Kelani SBD Tracker does not collect personal data and does not send training data to the developer or to any server. Training data is stored locally on your device unless you choose to export or share it.",
+      "Kelani SBD Tracker verzamelt geen persoonsgegevens en stuurt geen trainingsgegevens naar de ontwikkelaar of naar een server. Trainingsgegevens worden lokaal op je apparaat opgeslagen, tenzij je ervoor kiest ze te exporteren of te delen.",
     privacyLocalData:
-      "Local app data may include workouts, training history, bodyweight and body composition entries, Meet Planner attempts, meet prep checklist state, and app settings such as language and rest time.",
+      "Lokale appgegevens kunnen workouts, trainingsgeschiedenis, lichaamsgewicht en lichaamssamenstelling, Meet Planner-pogingen, checkliststatus voor wedstrijden en appinstellingen zoals taal en rusttijd bevatten.",
     privacyAccountsTitle: "Accounts",
     privacyAccountsText:
-      "Kelani SBD Tracker does not use accounts. You do not need to sign in, register or provide an email address.",
-    privacyAdsTitle: "Ads and tracking",
-    privacyAdsText: "Kelani SBD Tracker contains no ads, no analytics and no tracking.",
-    privacySharingTitle: "Data sharing",
+      "Kelani SBD Tracker gebruikt geen accounts. Je hoeft niet in te loggen, je te registreren of een e-mailadres op te geven.",
+    privacyAdsTitle: "Advertenties en tracking",
+    privacyAdsText: "Kelani SBD Tracker bevat geen advertenties, geen analytics en geen tracking.",
+    privacySharingTitle: "Gegevens delen",
     privacySharingText:
-      "Kelani SBD Tracker does not share your data with the developer or third parties. If you use export or share features, you choose where the exported file goes.",
-    privacyDeletionTitle: "Data retention and deletion",
+      "Kelani SBD Tracker deelt je gegevens niet met de ontwikkelaar of met derden. Als je export- of deelfuncties gebruikt, kies je zelf waar het geëxporteerde bestand naartoe gaat.",
+    privacyDeletionTitle: "Bewaren en verwijderen van gegevens",
     privacyDeletionText:
-      "Your app data is kept locally on your device. You can delete it by clearing the app data, uninstalling the app, or replacing it with an imported backup. Because the app does not use accounts or servers, the developer does not hold a copy of your app data.",
-    privacySecurityTitle: "Security",
+      "Je appgegevens blijven lokaal op je apparaat. Je kunt ze verwijderen door de appgegevens te wissen, de app te verwijderen of ze te vervangen met een geïmporteerde backup. Omdat de app geen accounts of servers gebruikt, bewaart de ontwikkelaar geen kopie van je appgegevens.",
+    privacySecurityTitle: "Beveiliging",
     privacySecurityText:
-      "Kelani SBD Tracker stores data locally using the storage available on your device. You are responsible for keeping your device and backups secure.",
+      "Kelani SBD Tracker slaat gegevens lokaal op via de opslag op je apparaat. Je bent zelf verantwoordelijk voor het beveiligen van je apparaat en backups.",
     privacyContactTitle: "Contact",
-    privacyContactText: "For privacy questions, contact mburgosfr@gmail.com.",
+    privacyContactText: "Voor privacyvragen kun je contact opnemen via mburgosfr@gmail.com.",
   },
 };
 
