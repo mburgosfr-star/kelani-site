@@ -8,6 +8,7 @@ const LINKS = {
   email: "mailto:mburgosfr@gmail.com",
   feedback: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20feedback",
   interest: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20testing%20or%20coaching%20interest",
+  privacy: "/#privacy",
 };
 
 const LANGS = [
@@ -60,6 +61,32 @@ const T = {
       "Let me know if you want to receive information about practical training review options.",
     built: "Built independently.",
     contact: "Contact",
+    privacy: "Privacy Policy",
+    backHome: "Back to Kelani",
+    privacyUpdated: "Last updated: 2026-06-02",
+    privacyIntro:
+      "Kelani SBD Tracker is an offline-first powerlifting tracker for Squat, Bench Press and Deadlift training. The app is built to work without accounts, ads, tracking or analytics.",
+    privacyDataTitle: "Data collection",
+    privacyDataText:
+      "Kelani SBD Tracker does not collect personal data and does not send training data to the developer or to any server. Training data is stored locally on your device unless you choose to export or share it.",
+    privacyLocalData:
+      "Local app data may include workouts, training history, bodyweight and body composition entries, Meet Planner attempts, meet prep checklist state, and app settings such as language and rest time.",
+    privacyAccountsTitle: "Accounts",
+    privacyAccountsText:
+      "Kelani SBD Tracker does not use accounts. You do not need to sign in, register or provide an email address.",
+    privacyAdsTitle: "Ads and tracking",
+    privacyAdsText: "Kelani SBD Tracker contains no ads, no analytics and no tracking.",
+    privacySharingTitle: "Data sharing",
+    privacySharingText:
+      "Kelani SBD Tracker does not share your data with the developer or third parties. If you use export or share features, you choose where the exported file goes.",
+    privacyDeletionTitle: "Data retention and deletion",
+    privacyDeletionText:
+      "Your app data is kept locally on your device. You can delete it by clearing the app data, uninstalling the app, or replacing it with an imported backup. Because the app does not use accounts or servers, the developer does not hold a copy of your app data.",
+    privacySecurityTitle: "Security",
+    privacySecurityText:
+      "Kelani SBD Tracker stores data locally using the storage available on your device. You are responsible for keeping your device and backups secure.",
+    privacyContactTitle: "Contact",
+    privacyContactText: "For privacy questions, contact mburgosfr@gmail.com.",
   },
   ca: {
     logoAlt: "Logotip de Kelani",
@@ -104,6 +131,32 @@ const T = {
       "Fes-m'ho saber si vols rebre informació sobre opcions pràctiques de revisió d'entrenament.",
     built: "Fet de manera independent.",
     contact: "Contacte",
+    privacy: "Política de privacitat",
+    backHome: "Torna a Kelani",
+    privacyUpdated: "Última actualització: 2026-06-02",
+    privacyIntro:
+      "Kelani SBD Tracker és una app offline-first de powerlifting per seguir entrenaments de Squat, Bench Press i Deadlift. L'app està pensada per funcionar sense comptes, anuncis, seguiment ni analítiques.",
+    privacyDataTitle: "Recollida de dades",
+    privacyDataText:
+      "Kelani SBD Tracker no recull dades personals i no envia dades d'entrenament al desenvolupador ni a cap servidor. Les dades d'entrenament es desen localment al teu dispositiu llevat que decideixis exportar-les o compartir-les.",
+    privacyLocalData:
+      "Les dades locals de l'app poden incloure entrenaments, historial d'entrenament, pes corporal i composició corporal, intents del Meet Planner, estat de la checklist de competició i preferències com l'idioma i el temps de descans.",
+    privacyAccountsTitle: "Comptes",
+    privacyAccountsText:
+      "Kelani SBD Tracker no utilitza comptes. No cal iniciar sessió, registrar-se ni donar una adreça electrònica.",
+    privacyAdsTitle: "Anuncis i seguiment",
+    privacyAdsText: "Kelani SBD Tracker no conté anuncis, analítiques ni seguiment.",
+    privacySharingTitle: "Compartició de dades",
+    privacySharingText:
+      "Kelani SBD Tracker no comparteix les teves dades amb el desenvolupador ni amb tercers. Si utilitzes les funcions d'exportació o compartició, tu decideixes on va el fitxer exportat.",
+    privacyDeletionTitle: "Conservació i eliminació de dades",
+    privacyDeletionText:
+      "Les dades de l'app es conserven localment al teu dispositiu. Les pots eliminar esborrant les dades de l'app, desinstal·lant-la o substituint-les per una còpia importada. Com que l'app no utilitza comptes ni servidors, el desenvolupador no conserva cap còpia de les teves dades.",
+    privacySecurityTitle: "Seguretat",
+    privacySecurityText:
+      "Kelani SBD Tracker desa les dades localment utilitzant l'emmagatzematge disponible al teu dispositiu. Tu ets responsable de mantenir segur el dispositiu i les còpies de seguretat.",
+    privacyContactTitle: "Contacte",
+    privacyContactText: "Per a preguntes de privacitat, contacta amb mburgosfr@gmail.com.",
   },
     nl: {
     logoAlt: "Kelani-logo",
@@ -148,6 +201,32 @@ const T = {
       "Laat weten als je informatie wilt ontvangen over praktische trainingsreview-opties.",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
+    privacy: "Privacy Policy",
+    backHome: "Back to Kelani",
+    privacyUpdated: "Last updated: 2026-06-02",
+    privacyIntro:
+      "Kelani SBD Tracker is an offline-first powerlifting tracker for Squat, Bench Press and Deadlift training. The app is built to work without accounts, ads, tracking or analytics.",
+    privacyDataTitle: "Data collection",
+    privacyDataText:
+      "Kelani SBD Tracker does not collect personal data and does not send training data to the developer or to any server. Training data is stored locally on your device unless you choose to export or share it.",
+    privacyLocalData:
+      "Local app data may include workouts, training history, bodyweight and body composition entries, Meet Planner attempts, meet prep checklist state, and app settings such as language and rest time.",
+    privacyAccountsTitle: "Accounts",
+    privacyAccountsText:
+      "Kelani SBD Tracker does not use accounts. You do not need to sign in, register or provide an email address.",
+    privacyAdsTitle: "Ads and tracking",
+    privacyAdsText: "Kelani SBD Tracker contains no ads, no analytics and no tracking.",
+    privacySharingTitle: "Data sharing",
+    privacySharingText:
+      "Kelani SBD Tracker does not share your data with the developer or third parties. If you use export or share features, you choose where the exported file goes.",
+    privacyDeletionTitle: "Data retention and deletion",
+    privacyDeletionText:
+      "Your app data is kept locally on your device. You can delete it by clearing the app data, uninstalling the app, or replacing it with an imported backup. Because the app does not use accounts or servers, the developer does not hold a copy of your app data.",
+    privacySecurityTitle: "Security",
+    privacySecurityText:
+      "Kelani SBD Tracker stores data locally using the storage available on your device. You are responsible for keeping your device and backups secure.",
+    privacyContactTitle: "Contact",
+    privacyContactText: "For privacy questions, contact mburgosfr@gmail.com.",
   },
 };
 
@@ -185,6 +264,44 @@ function Card({ title, children }) {
     </div>
   );
 }
+
+function PrivacyPage({ t, lang, setLang }) {
+  const sections = [
+    [t.privacyDataTitle, t.privacyDataText],
+    [t.privacyAccountsTitle, t.privacyAccountsText],
+    [t.privacyAdsTitle, t.privacyAdsText],
+    [t.privacySharingTitle, t.privacySharingText],
+    [t.privacyDeletionTitle, t.privacyDeletionText],
+    [t.privacySecurityTitle, t.privacySecurityText],
+    [t.privacyContactTitle, t.privacyContactText],
+  ];
+
+  return (
+    <main className="min-h-screen bg-black px-6 py-24 text-white md:px-10">
+      <LanguageSwitcher lang={lang} setLang={setLang} />
+
+      <div className="mx-auto max-w-3xl">
+        <a href="/" className="mb-8 inline-flex text-sm font-bold text-yellow-400 hover:text-yellow-300">
+          ← {t.backHome}
+        </a>
+
+        <h1 className="text-4xl font-black text-yellow-400 md:text-6xl">{t.privacy}</h1>
+        <p className="mt-4 text-sm font-semibold text-zinc-400">{t.privacyUpdated}</p>
+        <p className="mt-8 text-lg leading-8 text-zinc-200">{t.privacyIntro}</p>
+        <p className="mt-4 text-base leading-8 text-zinc-300">{t.privacyLocalData}</p>
+
+        <div className="mt-10 grid gap-5">
+          {sections.map(([title, body]) => (
+            <Card key={title} title={title}>
+              <p>{body}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
+
 
 function LanguageSwitcher({ lang, setLang }) {
   return (
@@ -233,6 +350,10 @@ export default function KelaniHomepage() {
     localStorage.setItem("kelani-site-language", lang);
   }, [lang]);
   const t = T[lang];
+
+  if (window.location.hash === "#privacy") {
+    return <PrivacyPage t={t} lang={lang} setLang={setLang} />;
+  }
 
   return (
     <main className="min-h-screen bg-black text-white">
