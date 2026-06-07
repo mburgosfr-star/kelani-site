@@ -7,7 +7,7 @@ const LINKS = {
   youtube: "https://www.youtube.com/@KelaniFocus",
   email: "mailto:mburgosfr@gmail.com",
   feedback: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20feedback",
-  interest: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20testing%20or%20coaching%20interest",
+  supportInterest: "mailto:mburgosfr@gmail.com?subject=Support%20Kelani",
   privacy: "/#privacy",
 };
 
@@ -43,22 +43,22 @@ const T = {
     bench: "Bench press",
     deadlift: "Deadlift",
     bodyweight: "Bodyweight and progress",
-    supportBadge: "Support development",
-    supportTitle: "Support Kelani SBD Tracker",
+    supportBadge: "Support Kelani",
+    supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is free, works offline and has no ads. If you want to support development, the most useful things right now are sending feedback, reporting bugs and sharing the app with other athletes.",
+      "Kelani SBD Tracker is free, independent and open source. If the app helps your training, you can support the project by sending feedback, reporting bugs, sharing it with other lifters, or helping fund future development.",
     feedbackTitle: "Send feedback",
     feedbackText:
       "Tell me what works, what feels unclear, or what would make the app more useful in real training.",
     bugTitle: "Report a bug",
     bugText:
       "Open a GitHub issue with what happened, what you expected, and which app version you were using.",
-    shareTitle: "Support development",
+    shareTitle: "Share Kelani",
     shareText:
-      "Share the app with another athlete or follow future Kelani updates. A direct support option may be added later.",
-    interestTitle: "Coaching interest",
-    interestText:
-      "Let me know if you want to receive information about practical training review options.",
+      "Share the app with another lifter who values structured training, offline-first tools and long-term progress.",
+    supportMoneyTitle: "Support Kelani",
+    supportMoneyText:
+      "A direct voluntary support option is being prepared. For now, you can contact me if you want to support the project or discuss sponsorship.",
     built: "Built independently.",
     contact: "Contact",
     privacy: "Privacy Policy",
@@ -113,22 +113,22 @@ const T = {
     bench: "Pressió sobre banc",
     deadlift: "Pes mort",
     bodyweight: "Pes corporal i progrés",
-    supportBadge: "Dona suport al desenvolupament",
-    supportTitle: "Dona suport a Kelani SBD Tracker",
+    supportBadge: "Dona suport a Kelani",
+    supportTitle: "Dona suport a Kelani",
     supportText:
-      "Kelani SBD Tracker és gratuïta, funciona sense connexió i no té anuncis. Si vols donar suport al desenvolupament, ara mateix el més útil és enviar feedback, informar d'errors i compartir l'app amb altres atletes.",
+      "Kelani SBD Tracker és gratuïta, independent i de codi obert. Si l'app t'ajuda en l'entrenament, pots donar suport al projecte enviant feedback, informant d'errors, compartint-la amb altres lifters o ajudant a finançar-ne el desenvolupament futur.",
     feedbackTitle: "Envia feedback",
     feedbackText:
       "Explica'm què funciona, què no queda clar o què faria que l'app fos més útil en entrenaments reals.",
     bugTitle: "Informa d'un error",
     bugText:
       "Obre una incidència a GitHub amb què ha passat, què esperaves i quina versió de l'app estaves fent servir.",
-    shareTitle: "Dona suport al desenvolupament",
+    shareTitle: "Comparteix Kelani",
     shareText:
-      "Comparteix l'app amb un altre atleta o segueix les futures actualitzacions de Kelani. Més endavant es podria afegir una opció directa de suport.",
-    interestTitle: "Interès en coaching",
-    interestText:
-      "Fes-m'ho saber si vols rebre informació sobre opcions pràctiques de revisió d'entrenament.",
+      "Comparteix l'app amb un altre lifter que valori l'entrenament estructurat, eines offline-first i el progrés a llarg termini.",
+    supportMoneyTitle: "Dona suport a Kelani",
+    supportMoneyText:
+      "S'està preparant una opció directa de suport voluntari. De moment, pots contactar amb mi si vols donar suport al projecte o parlar d'un patrocini.",
     built: "Fet de manera independent.",
     contact: "Contacte",
     privacy: "Política de privacitat",
@@ -183,22 +183,22 @@ const T = {
     bench: "Bench press",
     deadlift: "Deadlift",
     bodyweight: "Lichaamsgewicht en progressie",
-    supportBadge: "Support development",
-    supportTitle: "Support Kelani SBD Tracker",
+    supportBadge: "Support Kelani",
+    supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is gratis, werkt offline en heeft geen advertenties. Als je de ontwikkeling wilt steunen, zijn feedback sturen, bugs melden en de app delen met andere atleten nu het meest waardevol.",
+      "Kelani SBD Tracker is gratis, onafhankelijk en open source. Als de app je training helpt, kun je het project steunen door feedback te sturen, bugs te melden, de app met andere lifters te delen of toekomstige ontwikkeling te helpen financieren.",
     feedbackTitle: "Stuur feedback",
     feedbackText:
       "Vertel wat werkt, wat onduidelijk voelt of wat de app nuttiger zou maken tijdens echte trainingen.",
     bugTitle: "Meld een bug",
     bugText:
       "Open een GitHub issue met wat er gebeurde, wat je verwachtte en welke appversie je gebruikte.",
-    shareTitle: "Support development",
+    shareTitle: "Deel Kelani",
     shareText:
-      "Deel de app met een andere atleet of volg toekomstige Kelani-updates. Een directe supportoptie kan later worden toegevoegd.",
-    interestTitle: "Interesse in coaching",
-    interestText:
-      "Laat weten als je informatie wilt ontvangen over praktische trainingsreview-opties.",
+      "Deel de app met een andere lifter die gestructureerde training, offline-first tools en langetermijnprogressie waardeert.",
+    supportMoneyTitle: "Support Kelani",
+    supportMoneyText:
+      "Een directe vrijwillige supportoptie wordt voorbereid. Voor nu kun je contact opnemen als je het project wilt steunen of sponsoring wilt bespreken.",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
     privacy: "Privacybeleid",
@@ -446,7 +446,7 @@ export default function KelaniHomepage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+      <section id="support" className="mx-auto max-w-7xl scroll-mt-8 px-6 py-16 md:px-10">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-8 md:p-10">
           <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-center">
             <div>
@@ -500,9 +500,9 @@ export default function KelaniHomepage() {
                 <div className="font-bold text-white">{t.shareTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.shareText}</p>
               </a>
-              <a href={LINKS.interest} className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
-                <div className="font-bold text-white">{t.interestTitle}</div>
-                <p className="mt-2 text-sm leading-6 text-zinc-400">{t.interestText}</p>
+              <a href={LINKS.supportInterest} className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+                <div className="font-bold text-white">{t.supportMoneyTitle}</div>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">{t.supportMoneyText}</p>
               </a>
             </div>
           </div>
