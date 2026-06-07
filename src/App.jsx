@@ -446,7 +446,7 @@ export default function KelaniHomepage() {
         </div>
       </section>
 
-      <section id="support" className="mx-auto max-w-7xl scroll-mt-8 px-6 py-16 md:px-10">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-8 md:p-10">
           <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-center">
             <div>
@@ -476,7 +476,7 @@ export default function KelaniHomepage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+      <section id="support" className="mx-auto max-w-7xl scroll-mt-8 px-6 py-16 md:px-10">
         <div className="rounded-[2rem] border border-yellow-400/20 bg-yellow-400/[0.06] p-8 md:p-10">
           <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
             <div>
