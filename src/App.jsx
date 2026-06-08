@@ -33,9 +33,9 @@ const T = {
     contentTitle: "Training content",
     contentText:
       "Practical notes around strength training, app progress and long-term consistency. YouTube will become the content channel for Kelani-related updates.",
-    coachingTitle: "Coaching direction",
-    coachingText:
-      "Later: form reviews, training reviews and coaching-related support for athletes who want more structure and consistency.",
+    privacyFirstTitle: "Offline-first and privacy-friendly",
+    privacyFirstText:
+      "No accounts, no ads, no analytics and no tracking. Your training data stays on your device unless you choose to export or share it.",
     builtTitle: "Built for athletes who value structure",
     builtText:
       "Kelani SBD Tracker focuses on the important lifts: squat, bench press and deadlift. The goal is simple: make training easier to track, understand and improve over time, from daily training to competition-day preparation.",
@@ -103,9 +103,9 @@ const T = {
     contentTitle: "Contingut d'entrenament",
     contentText:
       "Notes pràctiques sobre entrenament de força, evolució de l'app i consistència a llarg termini. YouTube esdevindrà el canal de contingut per a les actualitzacions relacionades amb Kelani.",
-    coachingTitle: "Direcció de coaching",
-    coachingText:
-      "Més endavant: revisions de tècnica, revisions d'entrenament i suport relacionat amb el coaching per a atletes que volen més estructura i consistència.",
+    privacyFirstTitle: "Offline-first i respectuosa amb la privacitat",
+    privacyFirstText:
+      "Sense comptes, anuncis, analítiques ni seguiment. Les dades d'entrenament es queden al dispositiu llevat que decideixis exportar-les o compartir-les.",
     builtTitle: "Fet per a atletes que valoren l'estructura",
     builtText:
       "Kelani SBD Tracker se centra en els aixecaments importants: esquat, pressió sobre banc i pes mort. L'objectiu és simple: fer que l'entrenament sigui més fàcil de registrar, entendre i millorar amb el temps, des de l'entrenament diari fins a la preparació per al dia de competició.",
@@ -173,9 +173,9 @@ const T = {
     contentTitle: "Trainingscontent",
     contentText:
       "Praktische notities over krachttraining, app-ontwikkeling en langetermijnconsistentie. YouTube wordt het contentkanaal voor Kelani-gerelateerde updates.",
-    coachingTitle: "Coachingrichting",
-    coachingText:
-      "Later: techniekreviews, trainingsreviews en coachinggerelateerde ondersteuning voor atleten die meer structuur en consistentie willen.",
+    privacyFirstTitle: "Offline-first en privacyvriendelijk",
+    privacyFirstText:
+      "Geen accounts, advertenties, analytics of tracking. Je trainingsdata blijft op je apparaat, tenzij je ervoor kiest die te exporteren of te delen.",
     builtTitle: "Gebouwd voor atleten die structuur waarderen",
     builtText:
       "Kelani SBD Tracker focust op de belangrijke lifts: squat, bench press en deadlift. Het doel is simpel: training makkelijker bijhouden, begrijpen en blijven verbeteren over tijd, van dagelijkse training tot voorbereiding op wedstrijddag.",
@@ -440,8 +440,8 @@ export default function KelaniHomepage() {
             <p>{t.contentText}</p>
           </Card>
 
-          <Card title={t.coachingTitle}>
-            <p>{t.coachingText}</p>
+          <Card title={t.privacyFirstTitle}>
+            <p>{t.privacyFirstText}</p>
           </Card>
         </div>
       </section>
