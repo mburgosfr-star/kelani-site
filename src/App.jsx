@@ -27,6 +27,9 @@ const T = {
     languages: "Kelani SBD Tracker is available in English, Catalan and Dutch.",
     getApp: "Download Kelani SBD Tracker",
     github: "View on GitHub",
+    trustFree: "Free",
+    trustOpenSource: "Open source",
+    trustOffline: "Offline-first",
     productTitle: "Kelani SBD Tracker",
     productText:
       "A free powerlifting app for tracking squat, bench press, deadlift, bodyweight, history and progress. It also helps lifters plan meet attempts and prepare competition day with a practical checklist. This is the main product of Kelani.",
@@ -97,6 +100,9 @@ const T = {
     languages: "Kelani SBD Tracker està disponible en anglès, català i neerlandès.",
     getApp: "Descarrega Kelani SBD Tracker",
     github: "Consulta al GitHub",
+    trustFree: "Gratuïta",
+    trustOpenSource: "Codi obert",
+    trustOffline: "Offline-first",
     productTitle: "Kelani SBD Tracker",
     productText:
       "Una app gratuïta de powerlifting per fer seguiment de l'esquat, la pressió sobre banc, el pes mort, el pes corporal, l'historial i el progrés. És el producte principal de Kelani.",
@@ -167,6 +173,9 @@ const T = {
     languages: "Kelani SBD Tracker is beschikbaar in het Engels, Catalaans en Nederlands.",
     getApp: "Download Kelani SBD Tracker",
     github: "Bekijk op GitHub",
+    trustFree: "Gratis",
+    trustOpenSource: "Open source",
+    trustOffline: "Offline-first",
     productTitle: "Kelani SBD Tracker",
     productText:
       "Een gratis powerlifting-app voor het bijhouden van squat, bench press, deadlift, lichaamsgewicht, geschiedenis en progressie. Dit is het hoofdproduct van Kelani.",
@@ -413,6 +422,17 @@ export default function KelaniHomepage() {
               <Button href={LINKS.github} variant="secondary">
                 {t.github}
               </Button>
+            </div>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {[t.trustFree, t.trustOpenSource, t.trustOffline].map(item => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-bold uppercase tracking-wide text-zinc-400"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
 
