@@ -46,7 +46,7 @@ const T = {
     supportBadge: "Support Kelani",
     supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is free, independent and open source. If the app helps your training, you can support the project by sending feedback, reporting bugs, sharing it with other lifters, or helping fund future development.",
+      "Kelani SBD Tracker is free, independent and open source. The most useful support right now is practical: feedback from real training, clear bug reports, sharing the app with other lifters, and interest in future development support.",
     feedbackTitle: "Send feedback",
     feedbackText:
       "Tell me what works, what feels unclear, or what would make the app more useful in real training.",
@@ -56,9 +56,9 @@ const T = {
     shareTitle: "Share Kelani",
     shareText:
       "Share the app with another lifter who values structured training, offline-first tools and long-term progress.",
-    supportMoneyTitle: "Support Kelani",
+    supportMoneyTitle: "Support development",
     supportMoneyText:
-      "A direct voluntary support option is being prepared. For now, you can contact me if you want to support the project or discuss sponsorship.",
+      "A direct support option may be added later. For now, you can contact me if you want to support Kelani, discuss sponsorship, or help the project grow responsibly.",
     built: "Built independently.",
     contact: "Contact",
     privacy: "Privacy Policy",
@@ -116,7 +116,7 @@ const T = {
     supportBadge: "Dona suport a Kelani",
     supportTitle: "Dona suport a Kelani",
     supportText:
-      "Kelani SBD Tracker és gratuïta, independent i de codi obert. Si l'app t'ajuda en l'entrenament, pots donar suport al projecte enviant feedback, informant d'errors, compartint-la amb altres lifters o ajudant a finançar-ne el desenvolupament futur.",
+      "Kelani SBD Tracker és gratuïta, independent i de codi obert. El suport més útil ara mateix és pràctic: feedback d'entrenaments reals, informes d'errors clars, compartir l'app amb altres lifters i interès en suport futur al desenvolupament.",
     feedbackTitle: "Envia feedback",
     feedbackText:
       "Explica'm què funciona, què no queda clar o què faria que l'app fos més útil en entrenaments reals.",
@@ -126,9 +126,9 @@ const T = {
     shareTitle: "Comparteix Kelani",
     shareText:
       "Comparteix l'app amb un altre lifter que valori l'entrenament estructurat, eines offline-first i el progrés a llarg termini.",
-    supportMoneyTitle: "Dona suport a Kelani",
+    supportMoneyTitle: "Dona suport al desenvolupament",
     supportMoneyText:
-      "S'està preparant una opció directa de suport voluntari. De moment, pots contactar amb mi si vols donar suport al projecte o parlar d'un patrocini.",
+      "Més endavant es pot afegir una opció directa de suport. De moment, pots contactar amb mi si vols donar suport a Kelani, parlar d'un patrocini o ajudar el projecte a créixer de manera responsable.",
     built: "Fet de manera independent.",
     contact: "Contacte",
     privacy: "Política de privacitat",
@@ -186,7 +186,7 @@ const T = {
     supportBadge: "Support Kelani",
     supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is gratis, onafhankelijk en open source. Als de app je training helpt, kun je het project steunen door feedback te sturen, bugs te melden, de app met andere lifters te delen of toekomstige ontwikkeling te helpen financieren.",
+      "Kelani SBD Tracker is gratis, onafhankelijk en open source. De nuttigste steun op dit moment is praktisch: feedback uit echte trainingen, duidelijke bugmeldingen, de app delen met andere lifters en interesse in toekomstige ondersteuning van de ontwikkeling.",
     feedbackTitle: "Stuur feedback",
     feedbackText:
       "Vertel wat werkt, wat onduidelijk voelt of wat de app nuttiger zou maken tijdens echte trainingen.",
@@ -196,9 +196,9 @@ const T = {
     shareTitle: "Deel Kelani",
     shareText:
       "Deel de app met een andere lifter die gestructureerde training, offline-first tools en langetermijnprogressie waardeert.",
-    supportMoneyTitle: "Support Kelani",
+    supportMoneyTitle: "Steun de ontwikkeling",
     supportMoneyText:
-      "Een directe vrijwillige supportoptie wordt voorbereid. Voor nu kun je contact opnemen als je het project wilt steunen of sponsoring wilt bespreken.",
+      "Een directe supportoptie kan later worden toegevoegd. Voor nu kun je contact opnemen als je Kelani wilt steunen, sponsoring wilt bespreken of het project verantwoord wilt helpen groeien.",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
     privacy: "Privacybeleid",
