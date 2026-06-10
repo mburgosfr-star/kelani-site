@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 const LINKS = {
   neoStore: "https://apt.izzysoft.de/fdroid/index/apk/com.kel.powerlifting",
   github: "https://github.com/mburgosfr-star/kelani-sbd-tracker",
-  issues: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new",
+  issues: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new?template=bug_report.md",
+  feedback: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new?template=feedback.md",
   youtube: "https://www.youtube.com/@KelaniFocus",
   email: "mailto:mburgosfr@gmail.com",
-  feedback: "mailto:mburgosfr@gmail.com?subject=Kelani%20SBD%20Tracker%20feedback",
   supportInterest: "mailto:mburgosfr@gmail.com?subject=Support%20Kelani",
   privacy: "/#privacy",
 };
@@ -508,7 +508,7 @@ export default function KelaniHomepage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <a href={LINKS.feedback} className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+              <a href={LINKS.feedback} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
                 <div className="font-bold text-white">{t.feedbackTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.feedbackText}</p>
               </a>
