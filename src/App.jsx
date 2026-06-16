@@ -474,22 +474,35 @@ export default function KelaniHomepage() {
               <p className="mt-4 leading-8 text-zinc-300">{t.builtText}</p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-2">
-              <div className="rounded-2xl bg-black/40 p-5">
-                <div className="text-3xl font-black text-yellow-400">S</div>
-                <div className="mt-2 font-bold">{t.squat}</div>
+            <div className="grid gap-3">
+              <div className="grid gap-3 sm:grid-cols-3">
+                {[
+                  [t.squat, "/kelani-squat-still.jpg"],
+                  [t.bench, "/kelani-bench-still.jpg"],
+                  [t.deadlift, "/kelani-deadlift-still.jpg"],
+                ].map(([label, image]) => (
+                  <div key={label} className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
+                    <img
+                      src={image}
+                      alt={label}
+                      className="aspect-video w-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="p-4">
+                      <div className="font-bold text-white">{label}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="rounded-2xl bg-black/40 p-5">
-                <div className="text-3xl font-black text-yellow-400">B</div>
-                <div className="mt-2 font-bold">{t.bench}</div>
-              </div>
-              <div className="rounded-2xl bg-black/40 p-5">
-                <div className="text-3xl font-black text-yellow-400">D</div>
-                <div className="mt-2 font-bold">{t.deadlift}</div>
-              </div>
-              <div className="rounded-2xl bg-black/40 p-5">
-                <div className="text-3xl font-black text-yellow-400">+</div>
-                <div className="mt-2 font-bold">{t.bodyweight}</div>
+
+              <div className="flex items-center gap-4 rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-yellow-400 text-2xl font-black text-black">
+                  +
+                </div>
+                <div>
+                  <div className="font-bold text-white">{t.bodyweight}</div>
+                  <div className="mt-1 text-sm leading-6 text-zinc-400">{t.privacyFirstText}</div>
+                </div>
               </div>
             </div>
           </div>
