@@ -39,6 +39,15 @@ const T = {
     privacyFirstTitle: "Offline-first and privacy-friendly",
     privacyFirstText:
       "No accounts, no ads, no analytics and no tracking. Your training data stays on your device unless you choose to export or share it.",
+    screenshotsTitle: "See Kelani in action",
+    screenshotsText:
+      "Kelani keeps the main training flow clear: see what is next, complete the session, and follow progress over time.",
+    dashboardScreen: "Dashboard",
+    dashboardScreenText: "See your next workout, recent training status and key strength/bodyweight indicators.",
+    workoutScreen: "Workout",
+    workoutScreenText: "Follow warm-ups, work sets, back-offs, rest timing and effort feedback during training.",
+    statsScreen: "Progress",
+    statsScreenText: "Review 1RM, estimated 1RM, bodyweight and strength trends over time.",
     builtTitle: "Built for athletes who value structure",
     builtText:
       "Kelani SBD Tracker focuses on the important lifts: squat, bench press and deadlift. The goal is simple: make training easier to track, understand and improve over time, from daily training to competition-day preparation.",
@@ -112,6 +121,15 @@ const T = {
     privacyFirstTitle: "Offline-first i respectuosa amb la privacitat",
     privacyFirstText:
       "Sense comptes, anuncis, analítiques ni seguiment. Les dades d'entrenament es queden al dispositiu llevat que decideixis exportar-les o compartir-les.",
+    screenshotsTitle: "Mira Kelani en acció",
+    screenshotsText:
+      "Kelani manté clar el flux principal: veure què toca, completar la sessió i seguir el progrés amb el temps.",
+    dashboardScreen: "Dashboard",
+    dashboardScreenText: "Consulta el proper entrenament, l'estat recent i els indicadors principals de força i pes corporal.",
+    workoutScreen: "Entrenament",
+    workoutScreenText: "Segueix escalfaments, sèries principals, back-offs, temps de descans i feedback d'esforç.",
+    statsScreen: "Progrés",
+    statsScreenText: "Revisa 1RM, e1RM, pes corporal i tendències de força amb el temps.",
     builtTitle: "Fet per a atletes que valoren l'estructura",
     builtText:
       "Kelani SBD Tracker se centra en els aixecaments importants: esquat, pressió sobre banc i pes mort. L'objectiu és simple: fer que l'entrenament sigui més fàcil de registrar, entendre i millorar amb el temps, des de l'entrenament diari fins a la preparació per al dia de competició.",
@@ -185,6 +203,15 @@ const T = {
     privacyFirstTitle: "Offline-first en privacyvriendelijk",
     privacyFirstText:
       "Geen accounts, advertenties, analytics of tracking. Je trainingsdata blijft op je apparaat, tenzij je ervoor kiest die te exporteren of te delen.",
+    screenshotsTitle: "Bekijk Kelani in actie",
+    screenshotsText:
+      "Kelani houdt de hoofdflow helder: zien wat de volgende training is, de sessie afwerken en progressie over tijd volgen.",
+    dashboardScreen: "Dashboard",
+    dashboardScreenText: "Bekijk je volgende workout, recente trainingsstatus en belangrijke kracht- en lichaamsgewichtindicatoren.",
+    workoutScreen: "Workout",
+    workoutScreenText: "Volg warming-ups, work sets, back-offs, rusttijd en effort-feedback tijdens je training.",
+    statsScreen: "Progressie",
+    statsScreenText: "Bekijk 1RM, e1RM, lichaamsgewicht en krachttrends over tijd.",
     builtTitle: "Gebouwd voor atleten die structuur waarderen",
     builtText:
       "Kelani SBD Tracker focust op de belangrijke lifts: squat, bench press en deadlift. Het doel is simpel: training makkelijker bijhouden, begrijpen en blijven verbeteren over tijd, van dagelijkse training tot voorbereiding op wedstrijddag.",
@@ -267,7 +294,7 @@ function Button({ href, children, variant = "primary" }) {
 
 function Card({ title, children }) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-xl shadow-black/20 backdrop-blur">
+    <div className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5">
       <h3 className="mb-3 text-xl font-bold text-white">{title}</h3>
       <div className="text-sm leading-7 text-zinc-300">{children}</div>
     </div>
@@ -465,9 +492,38 @@ export default function KelaniHomepage() {
           </Card>
         </div>
       </section>
+      <section className="mx-auto max-w-7xl px-6 py-12 md:px-10">
+        <div className="rounded-[2rem] border border-yellow-400/20 bg-yellow-400/[0.06] p-8 md:p-10">
+          <div className="mb-8 max-w-3xl">
+            <h2 className="text-3xl font-black text-white md:text-4xl">{t.screenshotsTitle}</h2>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              [t.dashboardScreen, t.dashboardScreenText, "/kelani-dashboard-screenshot.png"],
+              [t.workoutScreen, t.workoutScreenText, "/kelani-workout-screenshot.png"],
+              [t.statsScreen, t.statsScreenText, "/kelani-stats-screenshot.png"],
+            ].map(([label, description, image]) => (
+              <div key={label} className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5">
+                <img
+                  src={image}
+                  alt={label}
+                  className="aspect-[9/16] w-full rounded-xl object-cover object-top"
+                  loading="lazy"
+                />
+                <div className="pt-4">
+                  <div className="font-bold text-white">{label}</div>
+                  <p className="mt-2 text-sm leading-6 text-zinc-400">{description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10">
-        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-white/[0.03] p-8 md:p-10">
+        <div className="rounded-[2rem] border border-yellow-400/20 bg-yellow-400/[0.06] p-8 md:p-10">
           <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-center">
             <div>
               <h2 className="text-3xl font-black text-white md:text-4xl">{t.builtTitle}</h2>
@@ -481,11 +537,11 @@ export default function KelaniHomepage() {
                   [t.bench, "/kelani-bench-still.jpg"],
                   [t.deadlift, "/kelani-deadlift-still.jpg"],
                 ].map(([label, image]) => (
-                  <div key={label} className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
+                  <div key={label} className="overflow-hidden rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-3">
                     <img
                       src={image}
                       alt={label}
-                      className="aspect-video w-full object-cover"
+                      className="aspect-video w-full rounded-xl object-cover"
                       loading="lazy"
                     />
                     <div className="p-4">
@@ -521,21 +577,21 @@ export default function KelaniHomepage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <a href={LINKS.feedback} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+              <a href={LINKS.feedback} target="_blank" rel="noreferrer" className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
                 <div className="font-bold text-white">{t.feedbackTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.feedbackText}</p>
               </a>
-              <a href={LINKS.issues} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+              <a href={LINKS.issues} target="_blank" rel="noreferrer" className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
                 <div className="font-bold text-white">{t.bugTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.bugText}</p>
               </a>
-              <a href={LINKS.neoStore} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
+              <a href={LINKS.neoStore} target="_blank" rel="noreferrer" className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
                 <div className="font-bold text-white">{t.shareTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.shareText}</p>
               </a>
-              <a href={LINKS.supportInterest} className="rounded-2xl border border-yellow-400/30 bg-yellow-400/[0.10] p-5 transition hover:bg-yellow-400/[0.14]">
-                <div className="font-bold text-yellow-100">{t.supportMoneyTitle}</div>
-                <p className="mt-2 text-sm leading-6 text-yellow-100/75">{t.supportMoneyText}</p>
+              <a href={LINKS.supportInterest} className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
+                <div className="font-bold text-white">{t.supportMoneyTitle}</div>
+                <p className="mt-2 text-sm leading-6 text-zinc-400">{t.supportMoneyText}</p>
               </a>
             </div>
           </div>
