@@ -49,7 +49,7 @@ const T = {
     supportBadge: "Support Kelani",
     supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is free, independent and open source. The most useful support right now is practical: feedback from real training, clear bug reports, sharing the app with other lifters, and interest in future development support.",
+      "Kelani SBD Tracker is free, independent and open source. No accounts, no ads, no tracking and no paywall. If the app helps your training, the best support is feedback, bug reports, sharing it with other lifters, or helping fund future development.",
     feedbackTitle: "Send feedback",
     feedbackText:
       "Tell me what works, what feels unclear, or what would make the app more useful in real training.",
@@ -61,7 +61,7 @@ const T = {
       "Share the app with another lifter who values structured training, offline-first tools and long-term progress.",
     supportMoneyTitle: "Support development",
     supportMoneyText:
-      "A direct support option may be added later. For now, you can contact me if you want to support Kelani, discuss sponsorship, or help the project grow responsibly.",
+      "Want to help keep Kelani free, offline and independent? Contact me about supporting development, sponsorship, or responsible ways to help the project grow.",
     built: "Built independently.",
     contact: "Contact",
     privacy: "Privacy Policy",
@@ -122,7 +122,7 @@ const T = {
     supportBadge: "Dona suport a Kelani",
     supportTitle: "Dona suport a Kelani",
     supportText:
-      "Kelani SBD Tracker és gratuïta, independent i de codi obert. El suport més útil ara mateix és pràctic: feedback d'entrenaments reals, informes d'errors clars, compartir l'app amb altres lifters i interès en suport futur al desenvolupament.",
+      "Kelani SBD Tracker és gratuïta, independent i de codi obert. Sense comptes, anuncis, seguiment ni paywall. Si l'app t'ajuda a entrenar, el millor suport és feedback, informes d'errors, compartir-la amb altres lifters o ajudar a finançar-ne el desenvolupament futur.",
     feedbackTitle: "Envia feedback",
     feedbackText:
       "Explica'm què funciona, què no queda clar o què faria que l'app fos més útil en entrenaments reals.",
@@ -134,7 +134,7 @@ const T = {
       "Comparteix l'app amb un altre lifter que valori l'entrenament estructurat, eines offline-first i el progrés a llarg termini.",
     supportMoneyTitle: "Dona suport al desenvolupament",
     supportMoneyText:
-      "Més endavant es pot afegir una opció directa de suport. De moment, pots contactar amb mi si vols donar suport a Kelani, parlar d'un patrocini o ajudar el projecte a créixer de manera responsable.",
+      "Vols ajudar a mantenir Kelani gratuïta, offline i independent? Contacta amb mi per donar suport al desenvolupament, parlar d'un patrocini o ajudar el projecte a créixer de manera responsable.",
     built: "Fet de manera independent.",
     contact: "Contacte",
     privacy: "Política de privacitat",
@@ -195,7 +195,7 @@ const T = {
     supportBadge: "Support Kelani",
     supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is gratis, onafhankelijk en open source. De nuttigste steun op dit moment is praktisch: feedback uit echte trainingen, duidelijke bugmeldingen, de app delen met andere lifters en interesse in toekomstige ondersteuning van de ontwikkeling.",
+      "Kelani SBD Tracker is gratis, onafhankelijk en open source. Geen accounts, geen advertenties, geen tracking en geen paywall. Als de app je training helpt, is de beste steun: feedback, bugmeldingen, delen met andere lifters of helpen om verdere ontwikkeling mogelijk te maken.",
     feedbackTitle: "Stuur feedback",
     feedbackText:
       "Vertel wat werkt, wat onduidelijk voelt of wat de app nuttiger zou maken tijdens echte trainingen.",
@@ -207,7 +207,7 @@ const T = {
       "Deel de app met een andere lifter die gestructureerde training, offline-first tools en langetermijnprogressie waardeert.",
     supportMoneyTitle: "Steun de ontwikkeling",
     supportMoneyText:
-      "Een directe supportoptie kan later worden toegevoegd. Voor nu kun je contact opnemen als je Kelani wilt steunen, sponsoring wilt bespreken of het project verantwoord wilt helpen groeien.",
+      "Wil je helpen Kelani gratis, offline en onafhankelijk te houden? Neem contact op over steun voor ontwikkeling, sponsoring of een verantwoorde manier om het project te helpen groeien.",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
     privacy: "Privacybeleid",
@@ -533,9 +533,9 @@ export default function KelaniHomepage() {
                 <div className="font-bold text-white">{t.shareTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.shareText}</p>
               </a>
-              <a href={LINKS.supportInterest} className="rounded-2xl border border-white/10 bg-black/30 p-5 transition hover:bg-black/45">
-                <div className="font-bold text-white">{t.supportMoneyTitle}</div>
-                <p className="mt-2 text-sm leading-6 text-zinc-400">{t.supportMoneyText}</p>
+              <a href={LINKS.supportInterest} className="rounded-2xl border border-yellow-400/30 bg-yellow-400/[0.10] p-5 transition hover:bg-yellow-400/[0.14]">
+                <div className="font-bold text-yellow-100">{t.supportMoneyTitle}</div>
+                <p className="mt-2 text-sm leading-6 text-yellow-100/75">{t.supportMoneyText}</p>
               </a>
             </div>
           </div>
