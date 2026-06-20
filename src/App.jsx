@@ -7,7 +7,7 @@ const LINKS = {
   feedback: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new?template=feedback.md",
   youtube: "https://www.youtube.com/@KelaniFocus",
   email: "mailto:mburgosfr@gmail.com",
-  supportInterest: "mailto:mburgosfr@gmail.com?subject=Support%20Kelani",
+  supportInterest: "https://github.com/sponsors/mburgosfr-star",
   privacy: "/#privacy",
 };
 
@@ -58,7 +58,7 @@ const T = {
     supportBadge: "Support Kelani",
     supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is free, independent and open source. No accounts, no ads, no tracking and no paywall. If the app helps your training, the best support is feedback, bug reports, sharing it with other lifters, or helping fund future development.",
+      "Kelani SBD Tracker is free, independent and open source. No accounts, no ads, no tracking and no paywall. If the app helps your training, the best support is feedback, bug reports, sharing it with other lifters, or sponsoring development through GitHub Sponsors.",
     feedbackTitle: "Send feedback",
     feedbackText:
       "Tell me what works, what feels unclear, or what would make the app more useful in real training.",
@@ -68,9 +68,9 @@ const T = {
     shareTitle: "Share Kelani",
     shareText:
       "Share the app with another lifter who values structured training, offline-first tools and long-term progress.",
-    supportMoneyTitle: "Support development",
+    supportMoneyTitle: "Sponsor Kelani on GitHub",
     supportMoneyText:
-      "Want to help keep Kelani free, offline and independent? Contact me about supporting development, sponsorship, or responsible ways to help the project grow.",
+      "Support Kelani through GitHub Sponsors and help keep the app free, offline-first, ad-free, privacy-friendly and independent.",
     built: "Built independently.",
     contact: "Contact",
     privacy: "Privacy Policy",
@@ -140,7 +140,7 @@ const T = {
     supportBadge: "Dona suport a Kelani",
     supportTitle: "Dona suport a Kelani",
     supportText:
-      "Kelani SBD Tracker és gratuïta, independent i de codi obert. Sense comptes, anuncis, seguiment ni paywall. Si l'app t'ajuda a entrenar, el millor suport és feedback, informes d'errors, compartir-la amb altres lifters o ajudar a finançar-ne el desenvolupament futur.",
+      "Kelani SBD Tracker és gratuïta, independent i de codi obert. Sense comptes, anuncis, seguiment ni paywall. Si l'app t'ajuda a entrenar, el millor suport és feedback, informes d'errors, compartir-la amb altres lifters o patrocinar-ne el desenvolupament a través de GitHub Sponsors.",
     feedbackTitle: "Envia feedback",
     feedbackText:
       "Explica'm què funciona, què no queda clar o què faria que l'app fos més útil en entrenaments reals.",
@@ -150,9 +150,9 @@ const T = {
     shareTitle: "Comparteix Kelani",
     shareText:
       "Comparteix l'app amb un altre lifter que valori l'entrenament estructurat, eines offline-first i el progrés a llarg termini.",
-    supportMoneyTitle: "Dona suport al desenvolupament",
+    supportMoneyTitle: "Patrocina Kelani a GitHub",
     supportMoneyText:
-      "Vols ajudar a mantenir Kelani gratuïta, offline i independent? Contacta amb mi per donar suport al desenvolupament, parlar d'un patrocini o ajudar el projecte a créixer de manera responsable.",
+      "Dona suport a Kelani a través de GitHub Sponsors i ajuda a mantenir l'app gratuïta, offline-first, sense anuncis, respectuosa amb la privacitat i independent.",
     built: "Fet de manera independent.",
     contact: "Contacte",
     privacy: "Política de privacitat",
@@ -222,7 +222,7 @@ const T = {
     supportBadge: "Support Kelani",
     supportTitle: "Support Kelani",
     supportText:
-      "Kelani SBD Tracker is gratis, onafhankelijk en open source. Geen accounts, geen advertenties, geen tracking en geen paywall. Als de app je training helpt, is de beste steun: feedback, bugmeldingen, delen met andere lifters of helpen om verdere ontwikkeling mogelijk te maken.",
+      "Kelani SBD Tracker is gratis, onafhankelijk en open source. Geen accounts, geen advertenties, geen tracking en geen paywall. Als de app je training helpt, is de beste steun: feedback, bugmeldingen, delen met andere lifters of ontwikkeling steunen via GitHub Sponsors.",
     feedbackTitle: "Stuur feedback",
     feedbackText:
       "Vertel wat werkt, wat onduidelijk voelt of wat de app nuttiger zou maken tijdens echte trainingen.",
@@ -232,9 +232,9 @@ const T = {
     shareTitle: "Deel Kelani",
     shareText:
       "Deel de app met een andere lifter die gestructureerde training, offline-first tools en langetermijnprogressie waardeert.",
-    supportMoneyTitle: "Steun de ontwikkeling",
+    supportMoneyTitle: "Sponsor Kelani op GitHub",
     supportMoneyText:
-      "Wil je helpen Kelani gratis, offline en onafhankelijk te houden? Neem contact op over steun voor ontwikkeling, sponsoring of een verantwoorde manier om het project te helpen groeien.",
+      "Steun Kelani via GitHub Sponsors en help de app gratis, offline-first, advertentievrij, privacyvriendelijk en onafhankelijk te houden.",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
     privacy: "Privacybeleid",
@@ -589,7 +589,7 @@ export default function KelaniHomepage() {
                 <div className="font-bold text-white">{t.shareTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.shareText}</p>
               </a>
-              <a href={LINKS.supportInterest} className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
+              <a href={LINKS.supportInterest} target="_blank" rel="noreferrer" className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
                 <div className="font-bold text-white">{t.supportMoneyTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.supportMoneyText}</p>
               </a>
