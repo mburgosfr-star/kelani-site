@@ -8,8 +8,10 @@ const LINKS = {
   youtube: "https://www.youtube.com/@KelaniFocus",
   email: "mailto:mburgosfr@gmail.com",
   supportInterest: "https://github.com/sponsors/mburgosfr-star",
-  privacy: "/#privacy",
+  privacy: `${import.meta.env.BASE_URL}#privacy`,
 };
+
+const asset = (path) => `${import.meta.env.BASE_URL}${path.startsWith("/") ? path.slice(1) : path}`;
 
 const LANGS = [
   { code: "en", label: "EN" },
@@ -269,7 +271,7 @@ const T = {
 function LogoMark({ alt }) {
   return (
     <div className="relative flex h-36 w-36 items-center justify-center rounded-[2rem] border border-white/10 bg-black/40 p-3 shadow-2xl shadow-yellow-500/10 md:h-44 md:w-44">
-      <img src="/kelani-logo.png" alt={alt} className="h-full w-full object-contain" />
+      <img src={asset("kelani-logo.png")} alt={alt} className="h-full w-full object-contain" />
     </div>
   );
 }
@@ -500,9 +502,9 @@ export default function KelaniHomepage() {
 
           <div className="grid gap-5 md:grid-cols-3">
             {[
-              [t.dashboardScreen, t.dashboardScreenText, "/kelani-dashboard-screenshot.png"],
-              [t.workoutScreen, t.workoutScreenText, "/kelani-workout-screenshot.png"],
-              [t.statsScreen, t.statsScreenText, "/kelani-stats-screenshot.png"],
+              [t.dashboardScreen, t.dashboardScreenText, asset("kelani-dashboard-screenshot.png")],
+              [t.workoutScreen, t.workoutScreenText, asset("kelani-workout-screenshot.png")],
+              [t.statsScreen, t.statsScreenText, asset("kelani-stats-screenshot.png")],
             ].map(([label, description, image]) => (
               <div key={label} className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5">
                 <img
@@ -533,9 +535,9 @@ export default function KelaniHomepage() {
             <div className="grid gap-3">
               <div className="grid gap-3 sm:grid-cols-3">
                 {[
-                  [t.squat, "/kelani-squat-still.jpg"],
-                  [t.bench, "/kelani-bench-still.jpg"],
-                  [t.deadlift, "/kelani-deadlift-still.jpg"],
+                  [t.squat, asset("kelani-squat-still.jpg")],
+                  [t.bench, asset("kelani-bench-still.jpg")],
+                  [t.deadlift, asset("kelani-deadlift-still.jpg")],
                 ].map(([label, image]) => (
                   <div key={label} className="overflow-hidden rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-3">
                     <img
