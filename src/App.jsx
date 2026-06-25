@@ -21,9 +21,9 @@ const T = {
     en: {
     logoAlt: "Kelani logo",
     badge: "Developer · Kelani SBD Tracker",
-    tagline: "Powerlifting tools and training systems for long-term progress.",
+    tagline: "Calm, offline-first SBD training for long-term progress.",
     intro:
-      "Kelani is an independent project built around strength, structure and practical progress. The main project is Kelani SBD Tracker: a free app for tracking squat, bench press, deadlift, bodyweight, training history and progress.",
+      "Kelani is an independent project built around strength, structure and practical progress. The main project is Kelani SBD Tracker: a calm, offline-first app for planning, tracking and completing Squat, Bench Press and Deadlift training without accounts, ads, analytics or cloud lock-in.",
     languages: "Kelani SBD Tracker is available in English, Catalan and Dutch.",
     getApp: "Download Kelani SBD Tracker",
     github: "View on GitHub",
@@ -32,7 +32,7 @@ const T = {
     trustOffline: "Offline-first",
     productTitle: "Kelani SBD Tracker",
     productText:
-      "A free powerlifting app for tracking squat, bench press, deadlift, bodyweight, history and progress. It also helps lifters plan meet attempts and prepare competition day with a practical checklist. This is the main product of Kelani.",
+      "A calm, offline-first powerlifting app for structured Squat, Bench Press and Deadlift training. It helps lifters plan, track and complete SBD workouts, follow progress over time, plan meet attempts and prepare competition day with a practical checklist.",
     contentTitle: "Training content",
     contentText:
       "Practical notes around strength training, app progress and long-term consistency. YouTube will become the content channel for Kelani-related updates.",
@@ -50,7 +50,7 @@ const T = {
     statsScreenText: "Review 1RM, estimated 1RM, bodyweight and strength trends over time.",
     builtTitle: "Built for athletes who value structure",
     builtText:
-      "Kelani SBD Tracker focuses on the important lifts: squat, bench press and deadlift. The goal is simple: make training easier to track, understand and improve over time, from daily training to competition-day preparation.",
+      "Kelani SBD Tracker focuses on the important lifts: Squat, Bench Press and Deadlift. The goal is simple: make SBD training easier to plan, track, understand and improve over time, from daily training to competition-day preparation.",
     squat: "Squat",
     bench: "Bench press",
     deadlift: "Deadlift",
@@ -185,9 +185,9 @@ const T = {
     nl: {
     logoAlt: "Kelani-logo",
     badge: "Developer · Kelani SBD Tracker",
-    tagline: "Powerlifting-tools en trainingssystemen voor langetermijnprogressie.",
+    tagline: "Rustige, offline-first SBD-training voor langetermijnprogressie.",
     intro:
-      "Kelani is een onafhankelijk project rond kracht, structuur en praktische progressie. Het hoofdproject is Kelani SBD Tracker: een gratis app voor het bijhouden van squat, bench press, deadlift, lichaamsgewicht, trainingsgeschiedenis en progressie.",
+      "Kelani is een onafhankelijk project rond kracht, structuur en praktische progressie. Het hoofdproject is Kelani SBD Tracker: een rustige, offline-first app voor het plannen, bijhouden en afronden van Squat-, Bench Press- en Deadlift-training zonder accounts, advertenties, analytics of cloud lock-in.",
     languages: "Kelani SBD Tracker is beschikbaar in het Engels, Catalaans en Nederlands.",
     getApp: "Download Kelani SBD Tracker",
     github: "Bekijk op GitHub",
@@ -196,7 +196,7 @@ const T = {
     trustOffline: "Offline-first",
     productTitle: "Kelani SBD Tracker",
     productText:
-      "Een gratis powerlifting-app voor het bijhouden van squat, bench press, deadlift, lichaamsgewicht, geschiedenis en progressie. Dit is het hoofdproduct van Kelani.",
+      "Een rustige, offline-first powerlifting-app voor gestructureerde Squat-, Bench Press- en Deadlift-training. De app helpt lifters SBD-workouts plannen, bijhouden en afronden, progressie volgen, pogingen plannen en wedstrijddag voorbereiden met een praktische checklist.",
     contentTitle: "Trainingscontent",
     contentText:
       "Praktische notities over krachttraining, app-ontwikkeling en langetermijnconsistentie. YouTube wordt het contentkanaal voor Kelani-gerelateerde updates.",
@@ -214,7 +214,7 @@ const T = {
     statsScreenText: "Bekijk 1RM, e1RM, lichaamsgewicht en krachttrends over tijd.",
     builtTitle: "Gebouwd voor atleten die structuur waarderen",
     builtText:
-      "Kelani SBD Tracker focust op de belangrijke lifts: squat, bench press en deadlift. Het doel is simpel: training makkelijker bijhouden, begrijpen en blijven verbeteren over tijd, van dagelijkse training tot voorbereiding op wedstrijddag.",
+      "Kelani SBD Tracker focust op de belangrijke lifts: Squat, Bench Press en Deadlift. Het doel is simpel: SBD-training makkelijker plannen, bijhouden, begrijpen en blijven verbeteren over tijd, van dagelijkse training tot voorbereiding op wedstrijddag.",
     squat: "Squat",
     bench: "Bench press",
     deadlift: "Deadlift",
