@@ -72,7 +72,9 @@ const T = {
       "Share the app with another lifter who values structured training, offline-first tools and long-term progress.",
     supportMoneyTitle: "Sponsor Kelani on GitHub",
     supportMoneyText:
-      "Support Kelani through GitHub Sponsors and help keep the app free, offline-first, ad-free, privacy-friendly and independent.",
+      "Tap the card to open GitHub Sponsors. If Android gets stuck, copy the link and open it in your browser.",
+    copySponsorLink: "Copy link",
+    copiedSponsorLink: "Copied",
     built: "Built independently.",
     contact: "Contact",
     privacy: "Privacy Policy",
@@ -154,7 +156,9 @@ const T = {
       "Comparteix l'app amb un altre lifter que valori l'entrenament estructurat, eines offline-first i el progrés a llarg termini.",
     supportMoneyTitle: "Patrocina Kelani a GitHub",
     supportMoneyText:
-      "Dona suport a Kelani a través de GitHub Sponsors i ajuda a mantenir l'app gratuïta, offline-first, sense anuncis, respectuosa amb la privacitat i independent.",
+      "Toca la targeta per obrir GitHub Sponsors. Si Android es bloqueja, copia l'enllaç i obre'l al navegador.",
+    copySponsorLink: "Copia l'enllaç",
+    copiedSponsorLink: "Copiat",
     built: "Fet de manera independent.",
     contact: "Contacte",
     privacy: "Política de privacitat",
@@ -236,7 +240,9 @@ const T = {
       "Deel de app met een andere lifter die gestructureerde training, offline-first tools en langetermijnprogressie waardeert.",
     supportMoneyTitle: "Sponsor Kelani op GitHub",
     supportMoneyText:
-      "Steun Kelani via GitHub Sponsors en help de app gratis, offline-first, advertentievrij, privacyvriendelijk en onafhankelijk te houden.",
+      "Tik op de kaart om GitHub Sponsors te openen. Als Android vastloopt, kopieer de link en open die in je browser.",
+    copySponsorLink: "Kopieer link",
+    copiedSponsorLink: "Gekopieerd",
     built: "Onafhankelijk gebouwd.",
     contact: "Contact",
     privacy: "Privacybeleid",
@@ -591,10 +597,53 @@ export default function KelaniHomepage() {
                 <div className="font-bold text-white">{t.shareTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.shareText}</p>
               </a>
-              <a href={LINKS.supportInterest} target="_blank" rel="noreferrer" className="rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 transition hover:bg-yellow-400/[0.10]">
+              <div
+                role="link"
+                tabIndex={0}
+                onClick={() => window.open(LINKS.supportInterest, "_blank", "noopener,noreferrer")}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    window.open(LINKS.supportInterest, "_blank", "noopener,noreferrer");
+                  }
+                }}
+                className="cursor-pointer rounded-2xl border border-yellow-400/20 bg-yellow-400/[0.06] p-5 text-left transition hover:bg-yellow-400/[0.10]"
+              >
                 <div className="font-bold text-white">{t.supportMoneyTitle}</div>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">{t.supportMoneyText}</p>
-              </a>
+
+                <button
+                  type="button"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const button = event.currentTarget;
+                    const originalText = button.textContent;
+
+                    const markCopied = () => {
+                      button.textContent = t.copiedSponsorLink;
+                      window.setTimeout(() => {
+                        button.textContent = originalText || t.copySponsorLink;
+                      }, 1800);
+                    };
+
+                    if (navigator.clipboard?.writeText) {
+                      navigator.clipboard.writeText(LINKS.supportInterest).then(markCopied).catch(() => {
+                        window.prompt("Copy sponsor link:", LINKS.supportInterest);
+                        markCopied();
+                      });
+                      return;
+                    }
+
+                    window.prompt("Copy sponsor link:", LINKS.supportInterest);
+                    markCopied();
+                  }}
+                  className="mt-4 rounded-full border border-yellow-400/40 bg-yellow-400/10 px-3 py-2 text-xs font-bold text-yellow-200 transition hover:bg-yellow-400/20"
+                >
+                  {t.copySponsorLink}
+                </button>
+              </div>
             </div>
           </div>
         </div>
