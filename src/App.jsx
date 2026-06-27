@@ -5,7 +5,6 @@ const LINKS = {
   github: "https://github.com/mburgosfr-star/kelani-sbd-tracker",
   issues: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new?template=bug_report.md",
   feedback: "https://github.com/mburgosfr-star/kelani-sbd-tracker/issues/new?template=feedback.md",
-  youtube: "https://www.youtube.com/@KelaniFocus",
   email: "mailto:mburgosfr@gmail.com",
   supportInterest: "https://github.com/sponsors/mburgosfr-star",
   privacy: `${import.meta.env.BASE_URL}#privacy`,
@@ -37,7 +36,7 @@ const T = {
       "A calm, offline-first powerlifting app for structured Squat, Bench Press and Deadlift training. It helps lifters plan, track and complete SBD workouts, follow progress over time, plan meet attempts and prepare competition day with a practical checklist.",
     contentTitle: "Training content",
     contentText:
-      "Practical notes around strength training, app progress and long-term consistency. YouTube will become the content channel for Kelani-related updates.",
+      "Practical notes around strength training, app progress and long-term consistency. Kelani keeps public content simple, focused and close to the app.",
     privacyFirstTitle: "Offline-first and privacy-friendly",
     privacyFirstText:
       "No accounts, no ads, no analytics and no tracking. Your training data stays on your device unless you choose to export or share it.",
@@ -121,7 +120,7 @@ const T = {
       "Una app gratuïta de powerlifting per fer seguiment de l'esquat, la pressió sobre banc, el pes mort, el pes corporal, l'historial i el progrés. És el producte principal de Kelani.",
     contentTitle: "Contingut d'entrenament",
     contentText:
-      "Notes pràctiques sobre entrenament de força, evolució de l'app i consistència a llarg termini. YouTube esdevindrà el canal de contingut per a les actualitzacions relacionades amb Kelani.",
+      "Notes pràctiques sobre entrenament de força, evolució de l'app i consistència a llarg termini. Kelani manté el contingut públic simple, enfocat i proper a l'app.",
     privacyFirstTitle: "Offline-first i respectuosa amb la privacitat",
     privacyFirstText:
       "Sense comptes, anuncis, analítiques ni seguiment. Les dades d'entrenament es queden al dispositiu llevat que decideixis exportar-les o compartir-les.",
@@ -205,7 +204,7 @@ const T = {
       "Een rustige, offline-first powerlifting-app voor gestructureerde Squat-, Bench Press- en Deadlift-training. De app helpt lifters SBD-workouts plannen, bijhouden en afronden, progressie volgen, pogingen plannen en wedstrijddag voorbereiden met een praktische checklist.",
     contentTitle: "Trainingscontent",
     contentText:
-      "Praktische notities over krachttraining, app-ontwikkeling en langetermijnconsistentie. YouTube wordt het contentkanaal voor Kelani-gerelateerde updates.",
+      "Praktische notities over krachttraining, app-ontwikkeling en langetermijnconsistentie. Kelani houdt publieke content simpel, gefocust en dicht bij de app.",
     privacyFirstTitle: "Offline-first en privacyvriendelijk",
     privacyFirstText:
       "Geen accounts, advertenties, analytics of tracking. Je trainingsdata blijft op je apparaat, tenzij je ervoor kiest die te exporteren of te delen.",
@@ -659,9 +658,6 @@ export default function KelaniHomepage() {
           </a>
           <a className="hover:text-white" href={LINKS.github} target="_blank" rel="noreferrer">
             GitHub
-          </a>
-          <a className="hover:text-white" href={LINKS.youtube} target="_blank" rel="noreferrer">
-            YouTube
           </a>
           <a className="hover:text-white" href={LINKS.email}>
             {t.contact}
